@@ -1,0 +1,92 @@
+@import "../../assets/styles/functions.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.splash-page {
+  // background-color: #182031;
+  background:
+  radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+  radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+  radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+  radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
+  radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
+  background-blend-mode:screen;
+  // color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .headline {
+      display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+      font-family: "Times New Roman", Times, serif;
+      font-size: get-vw(110px);
+      line-height: get-vw(50px);
+      margin-bottom: get-vw(100px);
+    }
+    .headlineimg{
+      width: get-vw(80px);
+      height: get-vw(80px);
+    }
+    .headlineplayerimg{
+      width: get-vw(70px);
+      height: get-vw(70px);
+    }
+    .subtext {
+      font-family: "Times New Roman", Times, serif;
+      font-size: get-vw(80px);
+      line-height: get-vw(40px);
+      margin-bottom: get-vw(90px);
+    }
+
+    .get-started-button {
+      font-family: "Times New Roman", Times, serif;
+      width: get-vw(350px);
+      height: get-vw(90px);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #d7394d99;;
+      border-radius: get-vw(82px);
+      border: get-vw(2px) solid transparent;
+      margin-top: get-vw(100px);
+
+      .text-get-started {
+        font-size: get-vw(60px);
+        line-height: get-vw(30px);
+        // color: #ffffff;
+      }
+
+      &.focus,
+      &:focus {
+        outline: none;
+        border: get-vw(2px) solid #020202;
+      }
+    }
+
+    .videoplayer-icon {
+      //margin-top: get-vw(80px);
+      width: get-vw(200px);
+      height: get-vw(200px);
+    }
+  }
+}
